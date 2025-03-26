@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>contacto</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <a href="../index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+    </div>
+    <div style="text-align: center;">
+        <h1>Contactanos</h1>
+        <P>Abrimos de lunes a viernes de  8pm a 10 pm</P>
+        <img src="../imagenes/contactanos.jpg   " width="50%">
+    </div>
+    <div style="text-align: center;">
+        <h2 style="margin: 20px 0;">formulario de contacto</h2>
+        <form method="post">
+            <label>Ingrese su nombre:</label>
+            <input name="nombre" type="text" placeholder="En Mayusculas"> <br>
+            <label>Ingrese su edad:</label>
+            <input name="edad" type="number" min="18" max="50" required> <br>
+            <label>Ingrese un telefono celular:</label>
+            <input name="telefono" type="tel" required> <br>
+            <label>Ingrese su fecha de nacimiento:</label>
+            <input name="fecha" type="date" min="1950-01-01" max="2006-12-31"> <br>
+            <label>Selecciona una foto</label>
+            <input name="foto" type="file" accept=".jpg, .png, .gif" max="1024kb"> <br>
+            <label>Selecciona tu genero:</label>
+            <input type="radio"value="Hombre" name="genero">Hombre
+            <input type="radio"value="Mujer"name="genero">Mujer    
+            <input type="radio"value="Otro"name="genero">Otro
+            <input type="radio"value="No sabe" name="genero">No sabe / Noresponde <br><br>
+            <label>Selecciona como deseas que te contacten:</label> <br>
+            <input type="checkbox" name="contacto" value="Email">Email
+            <input type="checkbox" name="contacto" value="Telefono">Telefono
+            <input type="checkbox" name="contacto" value="Paloma">Paloma mensajera
+            <input type="checkbox" name="contacto" value="Humo">Señales de humo <br><br>
+            <label>Selecciona un almuerzo:</label> <br>
+            <select name="almuerzo">
+                <option value=""selected>Seleccionar</option>
+                <option value="Sancocho">Sancocho</option>
+                <option value="Bandeja">Bandeja paisa</option>
+                <option value="Ajiaco">Ajiaco</option>
+            </select> <br><br>
+            <label>Observacion o sugerencia:</label> <br>
+            <textarea name="Observacion"></textarea> <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </form>
+
+    </div>
+</body>
+</html> 
